@@ -1,31 +1,59 @@
-statement = 'Hello World'
-print(statement)
+#statement = 'Hello World'
+#print(statement)
 
 def Newtons_second_law():
-    Mass = float(input("Enter the mass of the object: "))
-    Acceleration = float(input("Enter the acceleration of the object: "))
-    Force = Mass * Acceleration
-    print("The force is: " , Force)
+    mass = float(input("Enter the mass of the object: "))
+    acceleration = float(input("Enter the acceleration of the object: "))
+    force = mass * acceleration
+    print("The force is: " , force)
 
 def average_speed():
-    Distance = float(input("Enter the distance traveled (in meters): "))
-    Time = float(input("Enter the time taken (in seconds): "))
-    Speed = Distance / Time
-    print("The average speed is: " , Speed , "m/s")
+    distance = float(input("Enter the distance traveled (in meters): "))
+    time = float(input("Enter the time taken (in seconds): "))
+    speed = distance / time
+    print("The average speed is: " , speed , "m/s")
 
 def ohms_law():
-    Voltage = float(input("Enter the voltage (in volts): "))
-    Resistance = float(input("Enter the resistance (in ohms): "))
-    Current = Voltage / Resistance
-    print("The current is: " , Current , "amperes")
+    voltage = float(input("Enter the voltage (in volts): "))
+    resistance = float(input("Enter the resistance (in ohms): "))
+    current = voltage / resistance
+    print("The current is: " , current , "amperes")
 def impulse_momentum():
-    Mass = float(input("Enter the mass of the object (in kg): "))
+    mass = float(input("Enter the mass of the object (in kg): "))
     final_velocity = float(input("Enter the final velocity (in m/s): "))
     initial_velocity = float(input("Enter the initial velocity (in m/s): "))
-    impulse_momentum = Mass * (final_velocity - initial_velocity)
+    impulse_momentum = mass * (final_velocity - initial_velocity)
     print("The impulse momentum is: " , impulse_momentum , "kg·m/s")
+def kinectic_energy():
+    num = 0.5
+    mass = float(input("Enter the mass of the object: "))
+    velocity = float(input("Enter the velocity the object is moving at: "))
+    kinectic_energy = num * mass * (velocity * 2)
 
-ohms_law()
-impulse_momentum()
-average_speed()
-Newtons_second_law()
+#-------------------------------
+#           main function
+#-------------------------------
+def main():
+    print("Choose a calculation to perform:")
+    print("1. Newton's Second Law")
+    print("2. Average Speed")
+    print("3. Ohm's Law")
+    print("4. Impulse Momentum")
+    print("5. Kinetic Energy")
+
+    choice = input("Enter the number of your choice: ")
+    
+    if choice == '1':
+        Newtons_second_law()
+    elif choice == '2':
+        average_speed()
+    elif choice == '3':
+        ohms_law()
+    elif choice == '4':
+        impulse_momentum()
+    elif choice == '5':
+        kinectic_energy()
+    else:
+        print("Invalid choice. Please select a valid option.")
+
+main()
