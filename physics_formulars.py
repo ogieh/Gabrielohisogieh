@@ -16,6 +16,12 @@ def kinectic_energy():
     kinectic_energy = Mass * (Velocity * Velocity)
     print("The kinectic energy the body possesses is ", kinectic_energy)
 
+def velocity():
+    Distance = float(input("Enter the distance travelled by the body: "))
+    Time = float(input("Enter the time taken to cover the distance: "))
+    velocity = Distance / Time
+    print("The velocity the object is moving at is ", velocity)
+
 
 
 
