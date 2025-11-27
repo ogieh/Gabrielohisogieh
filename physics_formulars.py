@@ -4,6 +4,12 @@ def newtons_second_law():
     Force = Mass * Acceleration
     print("The force at which the object is moving is: ", Force)
 
+def ohms_law():
+    Current = float(input("Enter the current flowing through the circuit: "))
+    Resistance = float(input("Enter the resistance of the circuit: "))
+    Voltage = Current * Resistance
+    print("The voltage flowing through the circuit is" , Voltage)
+
 
 
 
