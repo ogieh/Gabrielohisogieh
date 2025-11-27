@@ -13,7 +13,7 @@ def ohms_law():
 def kinectic_energy():
     Mass = float(input("Enter the mass of the object (in Kilogram): "))
     Velocity = float(input("Enter the speed at which the object is moving (in meters per second): "))
-    kinectic_energy = Mass * (Velocity * Velocity)
+    kinectic_energy = 0.5 * Mass * (Velocity * Velocity)
     print("The kinectic energy the body possesses is ", kinectic_energy)
 
 def velocity():
@@ -27,7 +27,7 @@ def impulsive_momentum():
     Time = float(input("Enter the time taken to cover the distance: "))
     impulsive_momentum = Force * Time
     print("The impulsive momentum of the object at an instance is ", impulsive_momentum)
-    
+
 
 
 def main():
@@ -36,3 +36,4 @@ def main():
     print("3. kinectic energy")
     print("4. Velocity")
     print("5. Impulsive momentum")
+
