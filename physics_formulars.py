@@ -10,6 +10,13 @@ def ohms_law():
     Voltage = Current * Resistance
     print("The voltage flowing through the circuit is" , Voltage)
 
+def kinectic_energy():
+    Mass = float(input("Enter the mass of the object (in Kilogram): "))
+    Velocity = float(input("Enter the speed at which the object is moving (in meters per second): "))
+    kinectic_energy = Mass * (Velocity * Velocity)
+    print("The kinectic energy the body possesses is ", kinectic_energy)
+
+
 
 
 
