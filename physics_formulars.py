@@ -22,8 +22,12 @@ def velocity():
     velocity = Distance / Time
     print("The velocity the object is moving at is ", velocity)
 
-
-
+def impulsive_momentum():
+    Force  = float(input("Enter the force of the object: "))
+    Time = float(input("Enter the time taken to cover the distance: "))
+    impulsive_momentum = Force * Time
+    print("The impulsive momentum of the object at an instance is ", impulsive_momentum)
+    
 
 
 def main():
