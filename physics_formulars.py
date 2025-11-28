@@ -6,7 +6,7 @@ def newtons_second_law():
     print("The force at which the object is moving is: ", {Force})
 
 def ohms_law():
-    print("The ohms law formulae goes as current * Time")
+    print("The ohms law formulae goes as current * Resistance")
     Current = float(input("Enter the current flowing through the circuit: "))
     Resistance = float(input("Enter the resistance of the circuit: "))
     Voltage = Current * Resistance
