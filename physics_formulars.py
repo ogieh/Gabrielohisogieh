@@ -43,17 +43,17 @@ def main():
     print("3. kinectic energy")
     print("4. Velocity")
     print("5. Impulsive momentum")
-    choice = input("Enter the option of your choice? ")
+    choice = int(input("Enter the option of your choice? "))
 
-    if choice == "1":
+    if choice == 1:
         newtons_second_law()
-    elif choice == "2":
+    elif choice == 2:
         ohms_law()
-    elif choice == "3":
+    elif choice == 3:
         kinectic_energy()
-    elif choice == "4":
+    elif choice == 4:
         velocity()
-    elif choice == "5":
+    elif choice == 5:
         impulsive_momentum()
     else:
         print("Invalid choice, please select a valid option.")
